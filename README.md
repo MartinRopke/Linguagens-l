@@ -2,7 +2,7 @@
 Repositório criado para gerenciar os projetos e aulas de Linguagens l.
 
 # Desenvolvedor: 
-## Martin Ropke
+- Martin Ropke
 
 # Principais linguagens:
 - Java
