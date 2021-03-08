@@ -2,8 +2,6 @@ package Aula02;
 
 import java.util.Random;
 
-import org.graalvm.compiler.hotspot.nodes.profiling.RandomSeedNode;
-
 import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
 
 public class Basico03 {
