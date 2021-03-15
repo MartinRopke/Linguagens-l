@@ -43,6 +43,14 @@ public class Sistema {
                     System.out.println("Não foi possível realizar a operação");
                 }
                 break;
+            case 5:
+                System.out.println("Nome da conta:");
+                String nome = scanner.next();
+                System.out.println("Valor da conta:");
+                double valorDaConta = scanner.nextDouble();
+                System.out.println("Informe a data de vencimento (ano-mes-dia)!");
+                String dataVencimentoTitulo = scanner.next();
+                Titulo titulo = new Titulo(valorDaConta,nome,dataVencimentoTitulo,jurosDaConta)
             default:
                 System.out.println("Essa funcionalidade ainda não foi implementada");
         }
