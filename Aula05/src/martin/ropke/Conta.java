@@ -4,17 +4,17 @@ package martin.ropke;
 public class Conta {
     //Atributos da classe
 
-    Cliente cliente;
-    double saldo;
-    int numero;
+    private Cliente cliente;
+    private double saldo;
+    private int numero;
 
     //Métodos sa Classe
-    void depositar(double valor){
+    public void depositar(double valor){
 
         // Adiciona valor ao saldo
         this.saldo += valor;
     }
-    boolean sacar(double valor){
+    public boolean sacar(double valor){
 
         if(valor <= this.saldo){
             this.saldo -= valor;
@@ -25,7 +25,7 @@ public class Conta {
     }
 
 
-    boolean transferirDinheiro(Conta destino , double valor){
+    public boolean transferirDinheiro(Conta destino , double valor){
         if(this.sacar(valor)){
             destino.depositar(valor);
             return true;
@@ -33,10 +33,10 @@ public class Conta {
         return false;
     }
 
-    void visualizarSaldo(){
+    public double visualizarSaldo(){
 
         // Exibe valor do saldo da conta
-        System.out.println("Saldo atual: R$" + this.saldo);
+        return this.saldo;
     }
 
     @Override
