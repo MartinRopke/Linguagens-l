@@ -1,3 +1,7 @@
+package martin.ropke.pedra_papel_tesoura_2.model.classico;
+
+import martin.ropke.pedra_papel_tesoura_2.model.Jogada;
+
 public class Pedra extends Jogada{
     @Override
     public boolean verificarSePerdi(Jogada jogada) {

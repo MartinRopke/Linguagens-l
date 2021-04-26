@@ -1,5 +1,12 @@
+package martin.ropke.pedra_papel_tesoura_2.controle;
 import java.util.Random;
 import java.util.Scanner;
+
+import martin.ropke.pedra_papel_tesoura_2.model.Jogada;
+import martin.ropke.pedra_papel_tesoura_2.model.Jogador;
+import martin.ropke.pedra_papel_tesoura_2.model.classico.Papel;
+import martin.ropke.pedra_papel_tesoura_2.model.classico.Pedra;
+import martin.ropke.pedra_papel_tesoura_2.model.classico.Tesoura;
 
 public class Sistema {
     private Jogador player1, player2;

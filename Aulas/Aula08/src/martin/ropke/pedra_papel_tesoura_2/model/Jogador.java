@@ -1,3 +1,4 @@
+package martin.ropke.pedra_papel_tesoura_2.model;
 public class Jogador {
     private String nome;
     private boolean ehHumano;

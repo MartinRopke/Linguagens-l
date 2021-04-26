@@ -1,3 +1,7 @@
+package martin.ropke.pedra_papel_tesoura_2.model;
+
+import martin.ropke.pedra_papel_tesoura_2.enumarecao.Resultado;
+
 public class Jogada {
     private Jogada venco;
     private Jogada perco;

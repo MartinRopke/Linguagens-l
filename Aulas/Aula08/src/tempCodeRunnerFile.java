@@ -1,1 +1,0 @@
-Sistema sistema = new Sistema();
