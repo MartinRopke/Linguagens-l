@@ -13,15 +13,23 @@ public abstract class Jogada {
         return Resultado.EMPATOU;
     }
 
-    public abstract boolean verificarSePerdi(Jogada jogada);
-    public abstract boolean verificarSeGanhei(Jogada jogada){
-        for(Jogada jogadaAtual : jogadasaQueGanhei()){
+    final private boolean verificarSePerdi(Jogada jogada){
+        for(Jogada jogadaAtual : jogadasQuePerdi()){
             if(jogadaAtual.getClass() == jogada.getClass()){
                 return true;
             }
         }
         return false;
     }
-    public abstract Jogada[] jogadasaQueGanhei();
-    public abstract Jogada[] jogadasaQuePerdi();
+
+    final private boolean verificarSeGanhei(Jogada jogada){
+        for(Jogada jogadaAtual : jogadasQueGanhei()){
+            if(jogadaAtual.getClass() == jogada.getClass()){
+                return true;
+            }
+        }
+        return false;
+    }
+    public abstract Jogada[] jogadasQueGanhei();
+    public abstract Jogada[] jogadasQuePerdi();
 }

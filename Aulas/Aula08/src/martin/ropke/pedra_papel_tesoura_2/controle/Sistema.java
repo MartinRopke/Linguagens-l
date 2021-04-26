@@ -7,11 +7,13 @@ import martin.ropke.pedra_papel_tesoura_2.model.Jogador;
 import martin.ropke.pedra_papel_tesoura_2.model.classico.Papel;
 import martin.ropke.pedra_papel_tesoura_2.model.classico.Pedra;
 import martin.ropke.pedra_papel_tesoura_2.model.classico.Tesoura;
+import martin.ropke.pedra_papel_tesoura_2.model.jeff.Lagarto;
+import martin.ropke.pedra_papel_tesoura_2.model.jeff.Spoke;
 
 public class Sistema {
     private Jogador player1, player2;
     private Scanner scanner;
-    private final Jogada [] jogadas = new Jogada[]{new Pedra(), new Papel(), new Tesoura()};
+    private final Jogada [] jogadas = new Jogada[]{new Pedra(), new Papel(), new Tesoura(), new Spoke(), new Lagarto()};
     public Sistema(){
         scanner = new Scanner(System.in);
         inicializarJogadores();
@@ -32,7 +34,7 @@ public class Sistema {
         return jogadas[new Random().nextInt(jogadas.length)];
     }
     private Jogada escolherJogada(){
-        System.out.println("Informe sua jogada:\n0 - Pedra\n1 - Papel\n2 - Tesoura");
+        System.out.println("Informe sua jogada:\n0 - Pedra\n1 - Papel\n2 - Tesoura\n3 - Spoke\n4 - Lagarto");
         int escolha = scanner.nextInt();
         
         return jogadas[escolha];

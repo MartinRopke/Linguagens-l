@@ -6,13 +6,13 @@ import martin.ropke.pedra_papel_tesoura_2.model.jeff.Spoke;
 
 public class Papel extends Jogada{
     @Override
-    public boolean verificarSeGanhei(Jogada jogada) {
-        return (jogada instanceof Pedra) ||  (jogada instanceof Spoke);
+    public Jogada[] jogadasQueGanhei() {
+        return new Jogada[]{new Pedra(), new Spoke()};
     }
-
+   
     @Override
-    public boolean verificarSePerdi(Jogada jogada) {
-        return (jogada instanceof Tesoura) ||  (jogada instanceof Lagarto);
+    public Jogada[] jogadasQuePerdi() {
+        return new Jogada[]{new Tesoura(), new Lagarto()};
     }
 
     @Override

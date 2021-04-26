@@ -1,27 +1,19 @@
 package martin.ropke.pedra_papel_tesoura_2.model.classico;
 
+
 import martin.ropke.pedra_papel_tesoura_2.model.Jogada;
+import martin.ropke.pedra_papel_tesoura_2.model.jeff.Lagarto;
+import martin.ropke.pedra_papel_tesoura_2.model.jeff.Spoke;
 
 public class Pedra extends Jogada{
     @Override
-    public boolean verificarSePerdi(Jogada jogada) {
-        return jogada instanceof Papel;
+    public Jogada[] jogadasQueGanhei() {
+        return new Jogada[]{new Tesoura(), new Lagarto()};
     }
-
+   
     @Override
-    public Jogada[] jogadasaQueGanhei() {
-        return new Jogada[]{new Lagarto(), };
-    }
-
-    @Override
-    public Jogada[] jogadasaQuePerdi() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public boolean verificarSeGanhei(Jogada jogada) {
-        return jogada instanceof Tesoura;
+    public Jogada[] jogadasQuePerdi() {
+        return new Jogada[]{new Papel(), new Spoke()};
     }
 
     @Override
