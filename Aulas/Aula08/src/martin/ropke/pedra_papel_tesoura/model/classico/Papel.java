@@ -1,8 +1,8 @@
-package martin.ropke.pedra_papel_tesoura_2.model.classico;
+package martin.ropke.pedra_papel_tesoura.model.classico;
 
-import martin.ropke.pedra_papel_tesoura_2.model.Jogada;
-import martin.ropke.pedra_papel_tesoura_2.model.jeff.Lagarto;
-import martin.ropke.pedra_papel_tesoura_2.model.jeff.Spoke;
+import martin.ropke.pedra_papel_tesoura.model.Jogada;
+import martin.ropke.pedra_papel_tesoura.model.jeff.Lagarto;
+import martin.ropke.pedra_papel_tesoura.model.jeff.Spoke;
 
 public class Papel extends Jogada{
     @Override

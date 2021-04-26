@@ -9,6 +9,17 @@ public class Pedra extends Jogada{
     }
 
     @Override
+    public Jogada[] jogadasaQueGanhei() {
+        return new Jogada[]{new Lagarto(), };
+    }
+
+    @Override
+    public Jogada[] jogadasaQuePerdi() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
     public boolean verificarSeGanhei(Jogada jogada) {
         return jogada instanceof Tesoura;
     }
