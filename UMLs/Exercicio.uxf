@@ -1,0 +1,23 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>410</x><y>390</y><w>400</w><h>160</h></coordinates><panel_attributes>*URL*
+--
+-tempo: int
+-usuario: Usuario
+-encurtadaURL: String
+--
+-verificar(): boolean
++encurtarURL(URL: String): String
++URL(usuario: Usuario, linkCustomizado: String) : void
++URL() : void
++URL(usuario: Usuario) : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>190</y><w>300</w><h>130</h></coordinates><panel_attributes>*Usuario*
+--
+-senha: String
+-nome: String
+-idade:  int
+--
++Usuario(senha: String, nome: String, idade: int): void
++getNome(): String
++getIdade(): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>310</y><w>180</w><h>100</h></coordinates><panel_attributes>
+</panel_attributes><additional_attributes>10;80;160;10</additional_attributes></element></diagram>
